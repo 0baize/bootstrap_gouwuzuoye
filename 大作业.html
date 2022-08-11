@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/大作业.css">   
+    <script src="bootstrap-3.3.7-dist/jquery/jquery-3.5.1.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <title>web大作业</title>
+</head>
+<!-- 网页淡入淡出css动画效果 -->
+<style>
+    @keyframes fadein{
+        0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-webkit-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-moz-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-o-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-ms-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    body{
+        animation:fadein 5s linear 1;
+        -webkit-animation:fadein 5s linear 1;
+        -moz-animation:fadein 5s linear 1;
+        -o-animation:fadein 5s linear 1;
+        -ms-animation:fadein 5s linear 1;
+    }
+    </style>
+<body>
+    <header>
+        <nav  class="navbar navbar-default navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <img src="img/0124.png" alt="" class="pict" >  -->
+                </div>
+                <div  id="menu" class="collapse navbar-collapse" > 
+                    <ul class="nav navbar-nav">
+                         <li><img src="images/logo.png" alt="" class="pict"></li> 
+                         <li class="li-li"><a href="#">首页</a></li>
+                           
+                         <li class="li-li dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               穿搭
+                               <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                               <li><a href="#">潮搭技巧</a></li>
+                               <li><a href="#">潮搭相册</a></li>
+                               <li><a href="#">潮搭社区</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">潮搭排行榜</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">达人排行榜</a></li>
+                            </ul>
+                         </li>
+
+                        <li class="li-li"><a href="#">品牌</a></li>
+                        <li class="li-li"><a href="#">关注</a></li>
+                        <li class="li-li"><a href="#">发现</a></li>
+                        <li class="input-2">
+                            <div style="padding: 10px 10px 10px; width: 400px;">
+                            <form class="bs-example bs-example-form" role="form">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" value="请输入">
+                                  <span class="input-group-addon"><button>搜索</button></span>
+                                 </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="input-2">
+                            <div style="padding: 10px 10px 10px;">
+                                    <form class="bs-example bs-example-form" role="form">
+                                        <div class="input-group" > 
+                                             <input type="button" class="form-control" value="登录&nbsp;|&nbsp; 注册" data-toggle="modal" data-target="#myModal"> 
+                                         </div> 
+                                    </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+ <!-- 模态框（Modal） -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+    </button>
+    <h3 class="modal-title" id="myModalLabel" style="text-align: center; font-weight: 700;">
+    欢迎用户登录
+    </h3>
+        </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-2 control-label">账号</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="firstname" placeholder="请输入用户名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="firstname" placeholder="请输入密码">
+                                <span class="help-block">提示：密码为6-12位，尽量运用英文大小写字母+阿拉伯数字</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="text-align: center;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        登录
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        取消
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script>
+       $(function () { $('#myModal').modal('hide')});
+    </script>
+    <script>
+       $(function () { $('#myModal').on('hide.bs.modal', function () {
+          alert('嘿，登录成功');})
+       });
+    </script>                                   
+
+
+    </header>
+    <main>
+        <!-- 轮播 -->
+        <div class="container">
+            <div class="row" >
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ul> 
+                    <div class="carousel-inner">
+                        <div class="item active" ><img src="images/1213.png" ></div>
+                        <div class="item "><img src="images/1214.png" ></div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel"  data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel"  data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 主题内容 -->
+        <div class="commodity-show">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>潮流穿搭技巧</h2>
+                        <p class="biaoqian">懂得如何穿搭的人，可以提升自己的时尚度，快来一起学习吧！</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/展示003.webp" alt="" class="img-responsive">
+                        <h3>风格一：休闲系</h3>
+                        <p>休闲自然的穿搭穿在身上，男生们不但会感觉特别舒服，而且看起来也会显得十分轻松自在，帅气加分。</p>
+                        <a href="#" class="main-logo">&gt;更多</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/展示001.webp" alt="" id="tu" class="img-responsive">
+                        <h3>风格二：黑色系</h3>
+                        <p>黑色系估计是男孩子们最喜欢的风格了吧，整体也是感觉超级酷帅。薄款连帽风衣，在春天的作用也特别大，既可以防风，又可以防毛毛细雨。搭配黑色的大口袋休闲裤，整个人的风格显得特别硬朗大气。</p>
+                        <a href="#" class="main-logo">&gt;更多</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/展示002.webp" alt="" class="img-responsive">
+                        <h3>风格三：学院风 </h3>
+                        <p>对于还在学校或者刚毕业出来的学生党，学院风的穿搭更能展现自己的青春魅力。
+                        &nbsp;</p>
+                        <p>男生穿上一件白色的衬衫，总有一种翩翩少年的感觉，很有年轻感。黑色的休闲裤搭配白色衬衫，打造经典黑白配。高帮帆布鞋，正是年轻小哥哥们的最爱，尽显文艺清新范。 蓝色的小西装，里面搭配一件白色的打底T恤，非常适合刚出校门的学生党，既不会显得幼稚，也不会太过油腻。高帮帆布鞋，能够将自己的形象瞬间拉回学生时代，满满的青春活力。</p>
+                        <a href="#" class="main-logo">&gt;更多</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>潮衣，潮饰</h2>
+                        <p class="biaoqian">穿搭风格一定要多元化 上面第一条说了一定要找到属于自己的风格,但这并不代表着你就只能局限...</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/路易威登-pochette-voyage-中号手拿包--M45961_PM2_Front view.webp" alt="" class="img-responsive">
+                        <h3>POCHETTE VOYAGE 中号手拿包</h3>
+                        <p class="jiage">售价 ¥9，100 </p>
+                        <a href="附页1.html" class="main-logo" target="blank">&gt;>更多</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/路易威登-pochette-voyage-中号手拿包--M80914_PM2_Front view.webp" alt="" class="img-responsive">
+                        <h3>TRIO POUCH 手袋</h3>
+                        <p class="jiage">售价 ¥1，6000 </p>
+                        <a href="#" class="main-logo">&gt;>更多</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/路易威登-trio-pouch-手袋--M81013_PM2_Front view.webp" alt="" class="img-responsive">
+                        <h3>POCHETTE VOYAGE 中号手拿包</h3>
+                        <p class="jiage">售价 ¥9，000</p>
+                        <a href="#" class="main-logo">&gt;>更多</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/路易威登-tambour-moon-dual-time-black-white-腕表，35-毫米--QBB126_PM2_Front view.webp" alt="" class="img-responsive">
+                        <h4>TAMBOUR MOON DUAL TIME BLACK & WHITE 腕表，35 毫米 L</h4>
+                        <p class="jiage">售价 ¥3,8980 起</p>
+                        <a href="#" class="main-logo">&gt;>更多</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/QBB127_PM2_Front view.webp" alt="" class="img-responsive">
+                        <h4>TAMBOUR MOON DUAL TIME RED & WHITE 腕表，35 毫米​</h4>
+                        <p class="jiage">厂商建议零售价 ¥6,8800 起</p>
+                        <a href="#" class="main-logo">&gt;>更多</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/路易威登-lv-escale-tambour-horizon-pure-white-腕表，42-毫米--QBB133_PM2_Front view.png" alt="" class="img-responsive">
+                        <h4>TAMBOUR MOON DUAL TIME BLACK & WHITE 腕表，39.5 毫米</h4>
+                        <p class="jiage">厂商建议零售价 ¥3,5800 起</p>
+                        <a href="#" class="main-logo">&gt;>更多</a>
+                    </div>
+                </div>
+                <div class="hezi01" >
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12"><h2>潮搭成衣展示</h2></div>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/成衣01.webp" alt="" class="img-responsive">
+                        <h3>FW20 SHOW 系列</h3>
+                        <p>每个女人都有属于自己的一种红色。” ——奥黛丽·赫本</p>
+                        <a href="#" class="main-logo">&gt;了解更多详细</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/成衣2.webp" alt="" class="img-responsive">
+                        <h3>FW22 SHOW 系列</h3>
+                        <p>一件小黑裙，永远不会过少，也不会显得过分。”——卡尔·拉格斐</p>
+                        <a href="#" class="main-logo">&gt;了解更多详细</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/成衣3.webp" alt="" class="img-responsive">
+                        <h3>FW23 SHOW 系列</h3>
+                        <p>"我向来把T恤当做时尚的开端与结尾。" ——乔治·阿玛尼</p>
+                        <a href="#" class="main-logo">&gt;了解更多详细</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hezi02">
+                <div class="row" >
+                    <h2>品牌故事</h2>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/1_BRAND_CAMPAIGN_JORDAN_3360x1680_DI1.jpg" alt="" class="img-responsive">
+                        <h3>约旦</h3>
+                        <p>作为人与自然的奇观，约旦佩特拉考古遗址和瓦迪拉姆沙漠成为一群当地学童遨游探险的游乐场。从古老遗迹到出土的建筑结构，从引人入胜的景观到广袤的视野，学童们任想象力穿梭于天地之间。</p>
+                        <a href="#" class="main-logo">&gt;了解更多详细</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/2_BRAND_CAMPAIGN_JORDAN_3360x1680_DI1.webp" alt="" class="img-responsive">
+                        <h3>逐梦之旅</h3>
+                        <p>于路易威登而言，“旅行精神”不仅仅是探寻有形的地理目的地，更在于激发人们对其内在的好奇心。透过今年的广告宣传片，我们的足迹深入全球各地的梦幻妙境，生动演绎品牌的核心价值观。该大片由 Viviane Sassen 掌镜，宛如一曲颂歌，唤起观者内心的童真，在超凡脱俗的美丽秘境与无限可能性的遐想之中自由释放。</p>
+                        <a href="#" class="main-logo">&gt;了解更多详细</a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <img src="images/2_BRAND_CAMPAIGN_GREECE_3360x1680_DI1.jpg" alt="" class="img-responsive">
+                        <h3>希腊</h3>
+                        <p>希腊米洛斯岛拥有丰厚的历史底蕴，其荒凉的海岸和湛蓝的海水成为当地儿童的游乐天堂。带着天真的好奇心，孩子们的轮廓剪影从景观中浮现出来，传达无限的乐观和自由感。</p>
+                        <a href="#" class="main-logo">&gt;了解更多详细</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hezi03" style="background-image: url(images/5_BRAND_CAMPAIGN_JORDAN_3360x1680_DI1.webp);">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4"></div>
+                    <div class="col-sm-6 col-md-4"  id="xiaohezi">
+                            <h2>查找最近的经销商</h2>
+                            <p>如需获得销售、专业建议和支持方面的帮助，请联系您最近的经销商。</p>
+                           <h3><a href="#">>查找经销商</a></h3> 
+                        <div class="col-sm-6 col-md-4"></div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div> 
+    </main>
+    <footer>
+        <div class="commodity-show">
+            <div class="container">
+                <div class="row" id="hezi06">
+                    <div class="col-sm-6 col-md-3"></div>
+                    <div class="col-sm-6 col-md-3">
+                        <form action="" method="post">
+                            <dl>
+                                <dt>下载</dt>
+                                <dd><a href="#">下载产品手册</a></dd>
+                                <dd><a href="#">最新精品</a></dd>
+                                <dd><a href="#">操作指南</a></dd>
+                            </dl>
+                        </form>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <form action="" method="post">
+                            <dl>
+                                <dt>售后服务</dt>
+                                <dd><a href="#">全透明保养服务</a></dd>
+                                <dd><a href="#">最新动态</a></dd>
+                                <dd><a href="#">快递查询</a></dd>
+                                <dd><a href="#">投诉反馈</a></dd>
+                            </dl>
+                        </form>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <form action="" method="post">
+                            <dl>
+                                <dt>关于我们</dt>
+                                <dd><a href="#">诚信销售及服务</a></dd>
+                                <dd><a href="#">企业责任</a></dd>
+                                <dd><a href="#">招贤纳士</a></dd>
+                                <dd><a href="#">保持联系</a></dd>
+                                <dd><a href="#">个人信息使用确认函</a></dd>
+                                <dd><a href="#">经销商申请</a></dd>
+                                <dd><a href="#">在线商城</a></dd>
+                            </dl>
+                        </form>
+                    </div>
+                        <div class="col-sm-6 col-md-3"></div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-12" id="banquan">
+                <div class="row"> 
+                    <p>版权所有：西安思源学院电信学院张星星，"注项目图片素材为网上所找的违法立删"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

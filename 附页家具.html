@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/家具.css">   
+    <script src="bootstrap-3.3.7-dist/jquery/jquery-3.5.1.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <title>web大作业</title>
+</head>
+<!-- 网页淡入淡出css动画效果 -->
+<style>
+    @keyframes fadein{
+        0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-webkit-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-moz-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-o-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    @-ms-keyframes fadein{
+            0%{opacity: 0;
+             }
+        100%{
+            opacity: 1;
+    
+        }
+    }
+    body{
+        animation:fadein 5s linear 1;
+        -webkit-animation:fadein 5s linear 1;
+        -moz-animation:fadein 5s linear 1;
+        -o-animation:fadein 5s linear 1;
+        -ms-animation:fadein 5s linear 1;
+    }
+    </style>
+<body>
+    <header>
+        <nav  class="navbar navbar-default navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <img src="img/0124.png" alt="" class="pict" >  -->
+                </div>
+                <div  id="menu" class="collapse navbar-collapse" > 
+                    <ul class="nav navbar-nav">
+                         <li><img src="images/logo.png" alt="" class="pict"   ></li> 
+                         <li class="li-li dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               新品系列
+                               <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                               <li><a href="#">冬日新品</a></li>
+                               <li><a href="#">Cruise 2022早春系列</a></li>
+                               <li><a href="#">Flight Mode 系列</a></li>                              
+                               <li><a href="#">Artycapucines 手袋</a></li>
+                               <li><a href="#">FW21 Show 系列</a></li>
+                            </ul>
+                         </li>
+                           
+                         <li class="li-li dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               男士
+                               <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                               <li><a href="#">当季新款</a></li>
+                               <li><a href="#">时装秀款</a></li>
+                               <li><a href="#">时尚包袋</a></li>
+                               <li><a href="#">小型皮具</a></li>
+                               <li><a href="#">鞋履系列</a></li>
+                               <li><a href="#">高级成衣</a></li>
+                               <li><a href="#">旅行用品</a></li>
+                               <li><a href="#">腕表珠宝</a></li>
+                               <li><a href="#">香水蜡烛</a></li>
+                               <li><a href="#">订制服务</a></li>
+                            </ul>
+                         </li>
+                         <li class="li-li dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               女士
+                               <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">当季新款</a></li>
+                                <li><a href="#">时装秀款</a></li>
+                                <li><a href="#">时尚包袋</a></li>
+                                <li><a href="#">小型皮具</a></li>
+                                <li><a href="#">鞋履系列</a></li>
+                                <li><a href="#">高级成衣</a></li>
+                                <li><a href="#">旅行用品</a></li>
+                                <li><a href="#">腕表珠宝</a></li>
+                                <li><a href="#">香水蜡烛</a></li>
+                                <li><a href="#">订制服务</a></li>
+                            </ul>
+                         </li>
+                        
+                         <li class="li-li dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               生活艺术
+                               <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                               <li><a href="#">生活礼遇</a></li>
+                               <li><a href="#">智能产品和配饰</a></li>
+                               <li><a href="#">玩具和收藏品</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">家居系列</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">书籍和书写系列</a></li>
+                            </ul>
+                         </li>
+                        <li class="input-2">
+                            <div style="padding: 10px 10px 10px; width: 400px;">
+                            <form class="bs-example bs-example-form" role="form">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" value="搜索建议：秋冬靴子">
+                                  <span class="input-group-addon"><button>搜索</button></span>
+                                 </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- 主题内容 -->
+        <div class="commodity-show">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>家具系列</h2>
+                        <h2>家具系列</h2><hr/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" col-md-12 ">
+                        <img src="家具/header_DI1-1600w.webp" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-6 col-md-2" style="text-align: center; font-size: 30px; ">
+                        <a href="#" style="color: black;"><p>11/10</p></a> 
+                        <a href="#" style="color: black;"> <p>分享</p> </a>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h2 style="text-align: center;"> OBJETS NOMADES 家居系列</h2> 
+                        <p class="jiage" style="text-align: center;">路易威登邀请多位知名设计师构思 Objets Nomades 家居系列。 </p>
+                        <video  class="media-object shipi" controls="controls"  src="MP4/0040.mp4" autoplay="autoplay"  ></video>
+                    </div>
+                    <div class="col-sm-6 col-md-2">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-6 col-md-1"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <h2 style="text-align: center;">简介 </h2>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <p class="jiage">自 2012 年诞生以来，路易威登 Objets Nomades 家居系列邀请多位知名设计师构思充满创造力、实用性和创新性的家具和用品，并以路易威登特有的精湛工艺精心打造。这些充满实验风格的新作向路易威登历史上的定制杰作致敬 – 如 1874 年为法国探险家 Pierre Savorgnan de Brazza 制作的经典床箱 - 并引入世界各地创意设计师的新锐当代视角。</p>
+                        <p class="jiage">摄影：Philippe Lacombe, Tommaso Sartori</p>
+                    </div>
+                    <div class="col-sm-6 col-md-1"></div>
+                </div>
+
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-6 col-md-1"></div>
+                    <div class="col-sm-6 col-md-5">
+                        <a href="#"><img src="家具/0.webp" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-5">
+                        <a href="#"><img src="家具/1.webp" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-1"></div>
+                </div>
+
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-6 col-md-1"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#"><img src="家具/3.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#"><img src="家具/4.webp" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#"><img src="家具/5.webp" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-1"></div>
+                </div>
+                <div style="text-align: center; font-size: 20px; margin-top: 30px;">
+                    <button style="width: 400px; height: 50px; line-height: 50px;  background-color:white; border: 1px solid black;">更多</button>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-6 col-md-1"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <h2 style="text-align: center;">设计师</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <p class="jiage">多位国际知名设计师与路易威登携手打造 Objets Nomades 家居系列，包括 India Mahdavi、Marcel Wanders、Patricia Urquiola、Fernando 与 Humberto Campana、Atelier Oï 等人。</p>
+                    </div>
+                    <div class="col-sm-6 col-md-1"></div>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-6 col-md-1"></div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#"><img src="家具/00.webp" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#"><img src="家具/01.webp" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#"><img src="家具/02.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-2"></div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-6 col-md-1"></div>
+                    <div class="col-sm-6 col-md-6">
+                        <a href="#"><img src="家具/04.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#"><img src="家具/03.webp" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-2"></div>
+                </div>
+                <div style="text-align: center; font-size: 20px; margin-top: 30px;">
+                    <button style="width: 400px; height: 50px; line-height: 50px;  background-color:white; border: 1px solid black;">更多</button>
+                </div>
+            </div>
+        </div> 
+    </main>
+    <footer>
+            <div class="col-sm-6 col-md-12" id="banquan" style="margin-top: 50px;">
+                <div class="row"> 
+                    <p>版权所有：西安思源学院电信学院张星星，"注项目图片素材为网上所找的违法立删"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

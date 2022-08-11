@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.pict {
+    height: 50px;
+
+}
+nav .li-li:hover {
+    background-color: pink;
+}
+.nav-logo01 {
+    font-size: 20px;
+    margin-right: 40px;
+}
+.biaoqian{
+    text-align: center;
+    font-size: 20PX;
+}
+.li-li {
+    margin: 0 30px;
+}
+.container {
+   width: auto;
+}
+h2 {
+    text-align: left;
+    font-weight: 700;
+}
+.main-logo {
+    color: black;
+    font-size: 20PX;
+}
+.hezi01 {
+    background-color: silver;
+    height: 700px;
+}
+.hezi02 {
+    background-color: tan;
+    height: 600px;
+}
+.hezi03 {
+   background-image: url("images/5_BRAND_CAMPAIGN_JORDAN_3360x1680_DI1.webp");
+   height: 600px;
+}
+.input-1 {
+    margin: 0 30px;
+}
+.input-2 {
+    margin: 0 30px;
+}
+#xiaohezi {
+    float: left;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    margin-top: 100px;
+    margin-left: 80px;
+    line-height: 30px;
+}
+#xiaohezi p {
+    font-size: 20px;
+}
+#xiaohezi a {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+#banquan {
+    background-color:burlywood;
+    color: black;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+}
+#hezi06 {
+    background-color:#fff;
+    color: black;
+    height: auto;
+    top: auto;
+}
+#hezi06 dl dd {
+    margin-top: 8px;
+}
+#hezi06 dl dd a{
+    color: black;
+}
+.img-responsive {
+    width: 100%;
+    height: 400px;
+}
+.jiage {
+        font-size: 20px;
+    }
+.shipi {
+        width: 100%;
+        height:600px;
+        }
